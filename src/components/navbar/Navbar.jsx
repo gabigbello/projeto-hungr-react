@@ -14,7 +14,7 @@ const Navbar = ({setShowLogin}) => {
     <div className='navbar'>
       <Link to='/'><img src={assets.logo_hungr_nobg} alt="" className="logo" /></Link>
       <ul className="navbar-menu">
-        <Link to='/' onClick={()=>setMenu("home")}className={menu==="home"?"active":""}>Home</Link>
+        <Link to='/home' onClick={()=>setMenu("home")}className={menu==="home"?"active":""}>Home</Link>
         <a href='#explore-menu' onClick={()=>setMenu("menu")}className={menu==="menu"?"active":""}>Menu</a>
         <a href='#app-download' onClick={()=>setMenu("aplicativo")}className={menu==="aplicativo"?"active":""}>Aplicativo</a>
         <a href='#footer' onClick={()=>setMenu("contato")}className={menu==="contato"?"active":""}>Contato</a>
